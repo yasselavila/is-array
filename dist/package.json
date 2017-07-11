@@ -1,9 +1,8 @@
 {
   "name": "@yag/is-array",
   "description": "Just a fallback for Array.isArray()",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "BSD-3-Clause",
-  "private": true,
   "homepage": "https://github.com/yasselavila/is-array",
   "author": {
     "name": "Yassel Avila Gil",
@@ -19,30 +18,5 @@
     "is-array"
   ],
   "main": "index.js",
-  "typings": "index.d.ts",
-  "scripts": {
-    "start": "npm run build:w",
-    "clean": "rimraf dist && mkdir dist",
-    "dist:data": "cpx {package.json,README.md,LICENSE.txt} dist/",
-    "build:pre": "npm run clean && npm run dist:data",
-    "build": "npm run build:pre && npm run tsc",
-    "build:w": "npm run build:pre && npm run tsc:w",
-    "tsc": "tsc --outDir dist",
-    "tsc:w": "npm run tsc -- -w",
-    "test": "cross-env NODE_ENV=test mocha -r ts-node/register src/**/*.spec.ts"
-  },
-  "devDependencies": {
-    "typescript": "~2.4.0",
-    "@types/node": "~6.0.60",
-    "@types/mocha": "^2.2.41",
-    "@types/chai": "^4.0.1",
-    "ts-node": "^3.2.0",
-    "tslint": "^5.5.0",
-    "tslint-eslint-rules": "^4.1.1",
-    "mocha": "^3.4.2",
-    "chai": "^4.0.2",
-    "cross-env": "^5.0.1",
-    "rimraf": "^2.6.1",
-    "cpx": "^1.5.0"
-  }
+  "typings": "index.d.ts"
 }
