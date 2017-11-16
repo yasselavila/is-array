@@ -35,10 +35,10 @@ console.log(isArray(t2)); // false
 
 JavaScript:
 ```js
-var isArray = require('@yag/is-array');
+const isArray = require('@yag/is-array');
 
-var t1 = [1, 2, 3];
-var t2 = new Date();
+const t1 = [1, 2, 3];
+const t2 = new Date();
 
 console.log(isArray(t1)); // true
 console.log(isArray(t2)); // false
