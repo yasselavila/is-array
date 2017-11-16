@@ -24,7 +24,7 @@
     ]
   },
   "filesGlob": [
-    "**/*.ts",
+    "src/**/*.ts",
     "!**/*.spec.ts",
     "!node_modules/**/*"
   ],
