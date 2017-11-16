@@ -32,17 +32,20 @@
     "test": "cross-env NODE_ENV=test mocha -r ts-node/register src/**/*.spec.ts"
   },
   "devDependencies": {
-    "typescript": "~2.4.0",
-    "@types/node": "~6.0.60",
-    "@types/mocha": "^2.2.41",
-    "@types/chai": "^4.0.1",
-    "ts-node": "^3.2.0",
-    "tslint": "^5.5.0",
+    "@types/node": "~8.0.53",
+    "@types/mocha": "^2.2.43",
+    "@types/chai": "^4.0.5",
+    "rimraf": "^2.6.2",
+    "cross-env": "^5.1.0",
+    "webpack": "^3.8.1",
+    "awesome-typescript-loader": "^3.3.0",
+    "uglifyjs-webpack-plugin": "^1.0.1",
+    "mocha": "^4.0.1",
+    "chai": "^4.1.2",
+    "nyc": "^11.3.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
     "tslint-eslint-rules": "^4.1.1",
-    "mocha": "^3.4.2",
-    "chai": "^4.0.2",
-    "cross-env": "^5.0.1",
-    "rimraf": "^2.6.1",
-    "cpx": "^1.5.0"
+    "typescript": "~2.6.1"
   }
 }
