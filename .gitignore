@@ -66,4 +66,4 @@ build/
 /nm.7z
 /node_modules.zip
 /node_modules.7z
-temp-node-tests
+/manual-tests
