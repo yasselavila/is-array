@@ -29,6 +29,8 @@
     "build:w": "npm run build:pre && npm run tsc:w",
     "tsc": "tsc --outDir dist",
     "tsc:w": "npm run tsc -- -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "pretest": "npm run lint",
     "test": "cross-env NODE_ENV=test mocha -r ts-node/register src/**/*.spec.ts"
   },
   "devDependencies": {
