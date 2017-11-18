@@ -27,7 +27,10 @@
     "max-line-length": false,
     "member-access": false,
     "member-ordering": [
-      true
+      true,
+      "public-before-private",
+      "static-before-instance",
+      "variables-before-functions"
     ],
     "no-any": false,
     "no-arg": true,
