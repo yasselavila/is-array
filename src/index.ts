@@ -6,11 +6,13 @@
  * @link      https://github.com/yasselavila/is-array
  */
 
-import { default as isArray, fallbackIsArray } from './is-array';
+import fallbackIsArray from './fallback-is-array';
+
+const isArray: (obj: any) => boolean = Array.isArray || fallbackIsArray;
 
 export {
-  isArray,
-  fallbackIsArray
+  fallbackIsArray,
+  isArray
 };
 
 export default isArray;
