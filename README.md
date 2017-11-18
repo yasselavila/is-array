@@ -8,17 +8,25 @@
 Copyright (c) 2017, [Yassel Avila Gil](http://yasselavila.com).
 See [LICENSE](./LICENSE.txt) (BSD 3-Clause).
 
-## Documentation
-
 ### What is this?
 
 Just a fallback for Array.isArray()
+
+### License
+
+New BSD License. See [LICENSE.txt](./LICENSE.txt).
+
+## Documentation
 
 ### Installation
 
 `@yag/is-array` is available for [Node.js](http://npmjs.org) on [npm](http://npmjs.org). To install it, type:
 
-    $ npm install --save @yag/is-array
+```bash
+npm install --save-dev @yagis-array
+```
+
+If you need support for older browsers, check **usage**.
 
 ### Usage
 
