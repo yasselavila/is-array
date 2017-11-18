@@ -54,3 +54,18 @@ var t2 = new Date();
 console.log(isArray(t1)); // true
 console.log(isArray(t2)); // false
 ```
+
+Directly in (*legacy?*) browsers:
+```html
+<!-- ~500 bytes (gzipped) -->
+<script src="/node_modules/@yag/is-array/bundles/isarray.umd.bundle.js"></script>
+<script>
+
+  var t1 = [1, 2, 3];
+  var t2 = new Date();
+
+  console.log(isArray(t1)); // true
+  console.log(isArray(t2)); // false
+
+</script>
+```

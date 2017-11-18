@@ -37,5 +37,8 @@
   "buildOnSave": false,
   "atom": {
     "rewriteTsconfig": false
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "useTranspileModule": true
   }
 }

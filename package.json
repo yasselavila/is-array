@@ -33,7 +33,8 @@
     "cover": "cross-env NODE_ENV=test nyc npm test",
     "pretest": "npm run lint",
     "test": "cross-env NODE_ENV=test mocha -r ts-node/register src/**/*.spec.ts",
-    "test:w": "cross-env NODE_ENV=test mocha --watch -r ts-node/register src/**/*.spec.ts"
+    "test:w": "cross-env NODE_ENV=test mocha --watch -r ts-node/register src/**/*.spec.ts",
+    "bundle": "webpack --config webpack.config.js"
   },
   "devDependencies": {
     "@types/node": "~8.0.53",
