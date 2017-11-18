@@ -33,12 +33,23 @@ console.log(isArray(t1)); // true
 console.log(isArray(t2)); // false
 ```
 
-JavaScript:
+ES6+:
 ```js
-const isArray = require('@yag/is-array');
+const { isArray } = require('@yag/is-array');
 
 const t1 = [1, 2, 3];
 const t2 = new Date();
+
+console.log(isArray(t1)); // true
+console.log(isArray(t2)); // false
+```
+
+JavaScript (ES3, ES5):
+```js
+var isArray = require('@yag/is-array').isArray;
+
+var t1 = [1, 2, 3];
+var t2 = new Date();
 
 console.log(isArray(t1)); // true
 console.log(isArray(t2)); // false
