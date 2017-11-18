@@ -4,6 +4,9 @@
   "version": "1.0.1",
   "license": "BSD-3-Clause",
   "private": true,
+  "engines": {
+    "node": ">=4.2.0"
+  },
   "homepage": "https://github.com/yasselavila/is-array",
   "author": {
     "name": "Yassel Avila Gil",
