@@ -53,8 +53,9 @@ module.exports = {
     /* Minify the ouput */
     new UglifyJsPlugin({
       uglifyOptions: {
-        ie8: true,
         ecma: 5,
+        ie8: true,
+        mangle: false,
         output: {
           comments: false,
           beautify: false
