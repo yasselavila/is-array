@@ -30,6 +30,7 @@
     "tsc": "tsc --outDir dist",
     "tsc:w": "npm run tsc -- -w",
     "lint": "tslint -c tslint.json -p tsconfig.json",
+    "cover": "cross-env NODE_ENV=test nyc npm test",
     "pretest": "npm run lint",
     "test": "cross-env NODE_ENV=test mocha -r ts-node/register src/**/*.spec.ts",
     "test:w": "cross-env NODE_ENV=test mocha --watch -r ts-node/register src/**/*.spec.ts"
@@ -50,5 +51,30 @@
     "tslint": "^5.8.0",
     "tslint-eslint-rules": "^4.1.1",
     "typescript": "~2.6.1"
+  },
+  "nyc": {
+    "include": [
+      "src/*.ts",
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      ".vscode",
+      "coverage",
+      "dist",
+      "node_modules",
+      "typings",
+      "manual-tests"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "require": [
+      "ts-node/register"
+    ],
+    "reporter": [
+      "json",
+      "html"
+    ],
+    "all": true
   }
 }
