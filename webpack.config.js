@@ -6,12 +6,56 @@
  * @link      https://github.com/yasselavila/is-array
  */
 
+const { env } = require('process');
 const path = require('path');
+
 const { EnvironmentPlugin, LoaderOptionsPlugin } = require('webpack');
 const ModuleConcatenationPlugin = require('webpack/lib/optimize/ModuleConcatenationPlugin');
 const { CheckerPlugin } = require('awesome-typescript-loader');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
+/* Env */
+const nodeEnv = env.NODE_ENV || 'production';
+const isProd = ('production' === nodeEnv);
+
+/* Plugins */
+const plugins = [
+  /* Check and emit types in a separate process */
+  new CheckerPlugin(),
+  /* Make sure all dependencies are built in production mode */
+  new EnvironmentPlugin({
+    NODE_ENV: nodeEnv,
+    DEBUG: !isProd
+  }),
+  /* Enable module concatenation */
+  new ModuleConcatenationPlugin(),
+  /* Enable minify */
+  new LoaderOptionsPlugin({
+    minimize: isProd,
+    debug: !isProd
+  })
+];
+
+/* Minify the ouput */
+if (isProd) {
+  plugins.push(
+    new UglifyJsPlugin({
+      uglifyOptions: {
+        ecma: 5,
+        ie8: true,
+        mangle: false,
+        output: {
+          comments: false,
+          beautify: false
+        }
+      }
+    })
+  );
+}
+
+/*
+ * Export config
+ */
 module.exports = {
   entry: {
     'isarray': path.resolve('src/index')
@@ -19,10 +63,10 @@ module.exports = {
   output: {
     path: path.resolve('dist/bundles'),
     filename: '[name].umd.bundle.js',
-    libraryTarget: 'umd',
     sourceMapFilename: '[name].umd.bundle.js.map',
     chunkFilename: '[name].umd.[chunk].js',
-    pathinfo: false
+    libraryTarget: 'umd',
+    pathinfo: !isProd
   },
   resolve: {
     extensions: ['.ts', '.tsx']
@@ -35,32 +79,5 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    /* Check and emit types in a separate process */
-    new CheckerPlugin(),
-    /* Make sure all dependencies are built in production mode */
-    new EnvironmentPlugin({
-      NODE_ENV: 'production',
-      DEBUG: false
-    }),
-    /* Enable module concatenation */
-    new ModuleConcatenationPlugin(),
-    /* Enable minify */
-    new LoaderOptionsPlugin({
-      minimize: true,
-      debug: false
-    }),
-    /* Minify the ouput */
-    new UglifyJsPlugin({
-      uglifyOptions: {
-        ecma: 5,
-        ie8: true,
-        mangle: false,
-        output: {
-          comments: false,
-          beautify: false
-        }
-      }
-    })
-  ]
+  plugins: plugins
 };
