@@ -22,7 +22,7 @@ Just a fallback for Array.isArray()
 
 ### Usage
 
-TypeScript:
+###### TypeScript:
 ```ts
 import isArray from '@yag/is-array';
 
@@ -33,7 +33,7 @@ console.log(isArray(t1)); // true
 console.log(isArray(t2)); // false
 ```
 
-ES6+:
+###### ES6+:
 ```js
 const { isArray } = require('@yag/is-array');
 
@@ -44,7 +44,7 @@ console.log(isArray(t1)); // true
 console.log(isArray(t2)); // false
 ```
 
-JavaScript (ES3, ES5):
+###### JavaScript (ES3, ES5):
 ```js
 var isArray = require('@yag/is-array').isArray;
 
@@ -55,9 +55,9 @@ console.log(isArray(t1)); // true
 console.log(isArray(t2)); // false
 ```
 
-Directly in (*legacy?*) browsers:
+###### Directly in (*legacy?*) browsers:
 ```html
-<!-- ~600 bytes gzipped / ~500 bytes if you use Brotli ;-) -->
+<!-- ~500 bytes gzipped / ~430 bytes if you use Brotli ;-) -->
 <script src="/node_modules/@yag/is-array/bundles/isarray.umd.bundle.js"></script>
 <script>
 
