@@ -43,7 +43,6 @@ if (isProd) {
       uglifyOptions: {
         ecma: 5,
         ie8: true,
-        mangle: false,
         output: {
           comments: false,
           beautify: false
