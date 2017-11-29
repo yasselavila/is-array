@@ -12,7 +12,7 @@ See [LICENSE](./LICENSE.txt) (BSD 3-Clause).
 
 ### What is this?
 
-Just a fallback for Array.isArray()
+Just a fallback for [Array.isArray()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray)
 
 ### License
 
