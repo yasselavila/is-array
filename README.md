@@ -23,7 +23,7 @@ New BSD License. See [LICENSE.txt](./LICENSE.txt).
 `@yag/is-array` is available for [Node.js](http://npmjs.org) on [npm](http://npmjs.org). To install it, type:
 
 ```bash
-npm install --save-dev @yagis-array
+npm install --save-dev @yag/is-array
 ```
 
 If you need support for older browsers, check **usage**.
