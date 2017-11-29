@@ -19,6 +19,7 @@
     "declaration": true,
     "sourceMap": true,
     "rootDir": "src",
+    "outDir": "dist",
     "typeRoots": [
       "./node_modules/@types"
     ]

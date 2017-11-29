@@ -30,7 +30,7 @@
     "pretest": "npm run lint",
     "test": "cross-env NODE_ENV=test mocha -r ts-node/register src/**/*.spec.ts",
     "test:w": "cross-env NODE_ENV=test mocha --watch -r ts-node/register src/**/*.spec.ts",
-    "tsc": "tsc --outDir dist",
+    "tsc": "tsc --target es5",
     "tsc:w": "npm run tsc -- -w",
     "bundle": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "bundle:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
