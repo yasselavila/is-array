@@ -26,7 +26,7 @@
   "scripts": {
     "start": "npm run test:w",
     "cover": "cross-env NODE_ENV=test nyc --reporter=lcov npm run test:r",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "coveralls": "cat ./coverage/lcov.info | \"./node_modules/.bin/coveralls\"",
     "lint": "tslint -c tslint.json -p tsconfig.json",
     "pretest": "npm run lint",
     "test": "npm run cover",
