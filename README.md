@@ -6,6 +6,7 @@
 [![npm version](http://img.shields.io/npm/v/@yag/is-array.svg?style=flat-square)](https://npmjs.org/package/@yag/is-array)
 [![Build Status](https://img.shields.io/travis/yasselavila/is-array.svg?style=flat-square)](https://travis-ci.org/yasselavila/is-array)
 [![Dependencies Status](https://david-dm.org/yasselavila/is-array.svg?style=flat-square)](https://david-dm.org/yasselavila/is-array)
+[![Known Vulnerabilities](https://snyk.io/test/github/yasselavila/is-array/badge.svg)](https://snyk.io/test/github/yasselavila/is-array)
 
 Copyright (c) 2017, [Yassel Avila Gil](http://yasselavila.com).
 
