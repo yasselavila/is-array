@@ -5,6 +5,7 @@
 [![GitHub tag](https://img.shields.io/github/tag/yasselavila/is-array.svg?style=flat-square)](https://github.com/yasselavila/is-array/releases)
 [![npm version](http://img.shields.io/npm/v/@yag/is-array.svg?style=flat-square)](https://npmjs.org/package/@yag/is-array)
 [![Build Status](https://img.shields.io/travis/yasselavila/is-array.svg?style=flat-square)](https://travis-ci.org/yasselavila/is-array)
+[![Coverage Status](https://coveralls.io/repos/yasselavila/is-array/badge.svg?branch=master)](https://coveralls.io/r/yasselavila/is-array?branch=master)
 [![Dependencies Status](https://david-dm.org/yasselavila/is-array.svg?style=flat-square)](https://david-dm.org/yasselavila/is-array)
 [![Known Vulnerabilities](https://snyk.io/test/github/yasselavila/is-array/badge.svg)](https://snyk.io/test/github/yasselavila/is-array)
 
