@@ -8,7 +8,6 @@
 [![Dependencies Status](https://david-dm.org/yasselavila/is-array.svg?style=flat-square)](https://david-dm.org/yasselavila/is-array)
 
 Copyright (c) 2017, [Yassel Avila Gil](http://yasselavila.com).
-See [LICENSE](./LICENSE.txt) (BSD 3-Clause).
 
 ### What is this?
 
