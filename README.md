@@ -21,6 +21,8 @@ New BSD License. See [LICENSE.txt](./LICENSE.txt).
 
 ## Documentation
 
+> This library includes type definitions, we :heart: **TypeScript**.
+
 ### Installation
 
 `@yag/is-array` is available for [Node.js](http://npmjs.org) on [npm](http://npmjs.org). To install it, type:
