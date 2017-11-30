@@ -3,7 +3,7 @@
  *
  * @copyright Copyright (c) 2017, Yassel Avila Gil (http://yasselavila.com)
  * @license   BSD 3 Clause (see LICENSE.txt)
- * @link      https://github.com/yasselavila/is-array
+ * @link      https://github.com/yasselavila/js-is-array
  */
 
 const { env } = require('process');

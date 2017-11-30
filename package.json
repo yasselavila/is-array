@@ -7,14 +7,14 @@
   "engines": {
     "node": ">=4.2.0"
   },
-  "homepage": "https://github.com/yasselavila/is-array",
+  "homepage": "https://github.com/yasselavila/js-is-array",
   "author": {
     "name": "Yassel Avila Gil",
     "url": "http://yasselavila.com/"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/yasselavila/is-array.git"
+    "url": "https://github.com/yasselavila/js-is-array.git"
   },
   "keyworks": [
     "yag",
