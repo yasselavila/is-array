@@ -5,7 +5,7 @@
 [![GitHub tag](https://img.shields.io/github/tag/yasselavila/js-is-array.svg?style=flat-square)](https://github.com/yasselavila/js-is-array/releases)
 [![npm version](http://img.shields.io/npm/v/@yag/is-array.svg?style=flat-square)](https://npmjs.org/package/@yag/is-array)
 [![Build Status](https://img.shields.io/travis/yasselavila/js-is-array.svg?style=flat-square)](https://travis-ci.org/yasselavila/js-is-array)
-[![Coverage Status](https://coveralls.io/repos/yasselavila/js-is-array/badge.svg?branch=master)](https://coveralls.io/r/yasselavila/js-is-array?branch=master)
+[![Coveralls github](https://img.shields.io/coveralls/github/yasselavila/js-is-array/master.svg?style=flat-square)](https://coveralls.io/r/yasselavila/js-is-array?branch=master)
 [![Dependencies Status](https://david-dm.org/yasselavila/js-is-array.svg?style=flat-square)](https://david-dm.org/yasselavila/js-is-array)
 [![Known Vulnerabilities](https://snyk.io/test/github/yasselavila/js-is-array/badge.svg)](https://snyk.io/test/github/yasselavila/js-is-array)
 
