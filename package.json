@@ -41,13 +41,13 @@
     "build": "run-s clean cover pkg:data tsc bundle"
   },
   "devDependencies": {
-    "@types/node": "~8.0.53",
+    "@types/node": "~8.0.54",
     "@types/mocha": "^2.2.43",
-    "@types/chai": "^4.0.6",
+    "@types/chai": "^4.0.8",
     "rimraf": "^2.6.2",
     "npm-run-all": "^4.1.2",
     "cross-env": "^5.1.0",
-    "webpack": "^3.9.1",
+    "webpack": "^3.10.0",
     "awesome-typescript-loader": "^3.4.1",
     "uglifyjs-webpack-plugin": "^1.1.2",
     "mocha": "^4.0.1",
