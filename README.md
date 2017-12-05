@@ -21,7 +21,7 @@ New BSD License. See [LICENSE.txt](./LICENSE.txt).
 
 ## Documentation
 
-> This library includes type definitions, we :cupid: **TypeScript**.
+> This library includes type definitions, I :cupid: **TypeScript**.
 
 ### Installation
 
