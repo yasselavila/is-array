@@ -70,7 +70,7 @@ console.log(isArray(t2)); // false
 
 ###### Directly in (*legacy?*) browsers:
 ```html
-<!-- ~500 bytes gzipped / ~420 bytes if you use Brotli ;-) -->
+<!-- ~510 bytes gzipped / ~435 bytes if you use Brotli ;-) -->
 <script src="/node_modules/@yag/is-array/bundles/isarray.umd.bundle.js"></script>
 <script>
 
