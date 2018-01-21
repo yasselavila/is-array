@@ -57,7 +57,7 @@ console.log(isArray(t1)); // true
 console.log(isArray(t2)); // false
 ```
 
-###### JavaScript (ES3, ES5):
+###### JavaScript (ES5 / CommonJS):
 ```js
 var isArray = require('@yag/is-array').isArray;
 
