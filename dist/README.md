@@ -9,7 +9,7 @@
 [![Dependencies Status](https://david-dm.org/yasselavila/js-is-array.svg?style=flat-square)](https://david-dm.org/yasselavila/js-is-array)
 [![Known Vulnerabilities](https://snyk.io/test/github/yasselavila/js-is-array/badge.svg)](https://snyk.io/test/github/yasselavila/js-is-array)
 
-Copyright (c) 2017, [Yassel Avila Gil](http://yasselavila.com).
+Copyright (c) 2017 - 2018, [Yassel Avila Gil](http://yasselavila.com).
 
 ### What is this?
 
@@ -57,7 +57,7 @@ console.log(isArray(t1)); // true
 console.log(isArray(t2)); // false
 ```
 
-###### JavaScript (ES3, ES5):
+###### JavaScript (ES5 / CommonJS):
 ```js
 var isArray = require('@yag/is-array').isArray;
 
@@ -70,7 +70,7 @@ console.log(isArray(t2)); // false
 
 ###### Directly in (*legacy?*) browsers:
 ```html
-<!-- ~510 bytes gzipped / ~435 bytes if you use Brotli ;-) -->
+<!-- ~639 bytes gzipped / ~563 bytes if you use Brotli ;-) -->
 <script src="/node_modules/@yag/is-array/bundles/isarray.umd.bundle.js"></script>
 <script>
 
