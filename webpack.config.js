@@ -56,11 +56,12 @@ if (isProd) {
  * Export config
  */
 module.exports = {
+  mode: isProd ? 'production' : 'development',
   entry: {
     'isarray': path.resolve('src/index')
   },
   output: {
-    path: path.resolve('dist/bundles'),
+    path: path.resolve(__dirname, 'dist', 'bundles'),
     filename: '[name].umd.bundle.js',
     sourceMapFilename: '[name].umd.bundle.js.map',
     chunkFilename: '[name].umd.[chunk].js',
@@ -71,7 +72,7 @@ module.exports = {
     extensions: ['.ts', '.tsx']
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.tsx?$/,
         loader: 'awesome-typescript-loader'
