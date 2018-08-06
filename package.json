@@ -1,11 +1,11 @@
 {
   "name": "@yag/is-array",
   "description": "Just a fallback for Array.isArray()",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "license": "BSD-3-Clause",
   "private": true,
   "engines": {
-    "node": ">=4.2.0"
+    "node": ">=6.12"
   },
   "homepage": "https://github.com/yasselavila/js-is-array",
   "author": "Yassel Avila Gil (http://yasselavila.com/)",
