@@ -9,7 +9,7 @@
 [![Dependencies Status](https://david-dm.org/yasselavila/js-is-array.svg?style=flat-square)](https://david-dm.org/yasselavila/js-is-array)
 [![Known Vulnerabilities](https://snyk.io/test/github/yasselavila/js-is-array/badge.svg)](https://snyk.io/test/github/yasselavila/js-is-array)
 
-Copyright (c) 2017, [Yassel Avila Gil](http://yasselavila.com).
+Copyright (c) 2017 - 2018, [Yassel Avila Gil](http://yasselavila.com).
 
 ### What is this?
 
