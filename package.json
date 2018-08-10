@@ -34,7 +34,7 @@
     "bundle": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "bundle:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js",
     "clean": "rimraf dist && mkdir dist",
-    "pkg:data": "cpx {package.json,README.md,LICENSE.txt} dist/",
+    "pkg:data": "cpx {README.md,LICENSE.txt} dist/",
     "pkg:json": "node ./tools/cpjson.js",
     "build": "run-s clean cover pkg:data pkg:json tsc bundle"
   },
