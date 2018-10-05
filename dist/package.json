@@ -1,7 +1,7 @@
 {
   "name": "@yag/is-array",
   "description": "Just a fallback for Array.isArray()",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "license": "BSD-3-Clause",
   "engines": {
     "node": ">=6.12"
@@ -12,8 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/yasselavila/js-is-array.git"
   },
-  "keyworks": [
-    "yag",
+  "keywords": [
     "array",
     "is-array"
   ],

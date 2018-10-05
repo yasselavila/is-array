@@ -8,31 +8,24 @@
 
 const path = require('path');
 const fs = require('fs');
-const process = require('process');
 
-const pkgJsonContent = fs.readFileSync(
-  path.resolve(__dirname, '..', 'package.json')
-);
+const src = JSON.parse(fs.readFileSync(path.resolve(__dirname, '..', 'package.json')));
 
-const pkgJson = JSON.parse(pkgJsonContent);
-
-const json = {
-  "name": pkgJson.name,
-  "description": pkgJson.description,
-  "version": pkgJson.version,
-  "license": pkgJson.license,
-  "engines": pkgJson.engines,
-  "homepage": pkgJson.homepage,
-  "author": pkgJson.author,
-  "repository": pkgJson.repository,
-  "keyworks": pkgJson.keyworks,
-  "main": "index.js",
-  "typings": "index.d.ts"
+const dist = {
+  name: src.name,
+  description: src.description,
+  version: src.version,
+  license: src.license,
+  engines: src.engines,
+  homepage: src.homepage,
+  author: src.author,
+  repository: src.repository,
+  keywords: src.keywords,
+  main: 'index.js',
+  typings: 'index.d.ts'
 };
-
-const jsonStr = JSON.stringify(json, null, 2) + "\n";
 
 fs.writeFileSync(
   path.resolve(__dirname, '..', 'dist', 'package.json'),
-  jsonStr
+  JSON.stringify(dist, null, 2) + '\n'
 );
