@@ -7,9 +7,7 @@
  */
 
 import { expect } from 'chai';
-
-import isArray from './index';
-import { fallbackIsArray } from './index';
+import isArray, { fallbackIsArray } from './index';
 
 describe('Provide functions', () => {
   it('isArray()', () => {

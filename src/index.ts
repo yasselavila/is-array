@@ -10,9 +10,6 @@ import fallbackIsArray from './fallback-is-array';
 
 const isArray: (obj: any) => boolean = Array.isArray || fallbackIsArray;
 
-export {
-  fallbackIsArray,
-  isArray
-};
+export { fallbackIsArray, isArray };
 
 export default isArray;

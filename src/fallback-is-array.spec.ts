@@ -7,7 +7,6 @@
  */
 
 import { expect } from 'chai';
-
 import fallbackIsArray from './fallback-is-array';
 
 describe('fallbackIsArray()', () => {

@@ -8,8 +8,7 @@
  */
 Object.defineProperty(exports, "__esModule", { value: true });
 function fallbackIsArray(obj) {
-    return ('object' === typeof obj)
-        && ('[object Array]' === Object.prototype.toString.call(obj));
+    return 'object' === typeof obj && '[object Array]' === Object.prototype.toString.call(obj);
 }
 exports.default = fallbackIsArray;
 //# sourceMappingURL=fallback-is-array.js.map

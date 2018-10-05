@@ -7,6 +7,5 @@
  */
 
 export default function fallbackIsArray(obj: any): boolean {
-  return ('object' === typeof obj)
-    && ('[object Array]' === Object.prototype.toString.call(obj));
+  return 'object' === typeof obj && '[object Array]' === Object.prototype.toString.call(obj);
 }
